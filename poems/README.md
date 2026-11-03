@@ -22,5 +22,5 @@ poems/
 ## 维护
 
 - **加诗**：往对应作者的 `poems.json` 数组里追加；**加作者**：建目录写两个 json
-- **任何增删之后**：在博客源仓库跑 `node tools/poem-index.mjs` 重建 `index.json`，一起提交
-- 收割脚本（`tools/harvest-souyun.mjs` / `tools/harvest-poetrydb.mjs`）可重跑补量，幂等覆盖 `poems.json`、不碰手补的 `author.json`
+- **任何增删之后**：在本仓库根目录跑 `node tools/poem-index.mjs` 重建 `index.json`，一起提交
+- 收割脚本（`tools/harvest-souyun.mjs` / `tools/harvest-poetrydb.mjs`，在本仓库 tools/ 下）可重跑补量，幂等覆盖 `poems.json`、不碰手补的 `author.json`
