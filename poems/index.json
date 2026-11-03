@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-03T03:54:08.543Z",
+  "generatedAt": "2026-11-03T06:13:27.004Z",
   "totals": {
     "zhClassical": 19068,
-    "zhModern": 15,
+    "zhModern": 481,
     "en": 801,
     "de": 13
   },
   "authorsPerBucket": {
     "zhClassical": 32,
-    "zhModern": 6,
+    "zhModern": 24,
     "en": 14,
     "de": 6
   },
@@ -145,28 +145,100 @@
     ],
     "zhModern": [
       {
-        "file": "zh/modern/刘半农/poems.json",
+        "file": "zh/modern/十七年/闻捷/poems.json",
+        "count": 4
+      },
+      {
+        "file": "zh/modern/左翼/殷夫/poems.json",
         "count": 1
       },
       {
-        "file": "zh/modern/徐志摩/poems.json",
-        "count": 5
+        "file": "zh/modern/新月派/徐志摩/poems.json",
+        "count": 65
       },
       {
-        "file": "zh/modern/戴望舒/poems.json",
-        "count": 3
+        "file": "zh/modern/新月派/方玮德/poems.json",
+        "count": 9
       },
       {
-        "file": "zh/modern/李叔同/poems.json",
-        "count": 1
+        "file": "zh/modern/新月派/朱湘/poems.json",
+        "count": 14
       },
       {
-        "file": "zh/modern/林徽因/poems.json",
+        "file": "zh/modern/新月派/林徽因/poems.json",
+        "count": 23
+      },
+      {
+        "file": "zh/modern/新月派/邵洵美/poems.json",
         "count": 2
       },
       {
-        "file": "zh/modern/闻一多/poems.json",
+        "file": "zh/modern/新月派/闻一多/poems.json",
+        "count": 30
+      },
+      {
+        "file": "zh/modern/新月派/陈梦家/poems.json",
+        "count": 18
+      },
+      {
+        "file": "zh/modern/新月派/饶孟侃/poems.json",
+        "count": 2
+      },
+      {
+        "file": "zh/modern/现代派/废名/poems.json",
+        "count": 22
+      },
+      {
+        "file": "zh/modern/现代派/戴望舒/poems.json",
+        "count": 34
+      },
+      {
+        "file": "zh/modern/现代派/李广田/poems.json",
+        "count": 9
+      },
+      {
+        "file": "zh/modern/白话初创/刘半农/poems.json",
+        "count": 58
+      },
+      {
+        "file": "zh/modern/白话初创/刘大白/poems.json",
+        "count": 21
+      },
+      {
+        "file": "zh/modern/白话初创/周作人/poems.json",
         "count": 3
+      },
+      {
+        "file": "zh/modern/白话初创/康白情/poems.json",
+        "count": 4
+      },
+      {
+        "file": "zh/modern/白话初创/朱自清/poems.json",
+        "count": 6
+      },
+      {
+        "file": "zh/modern/白话初创/李叔同/poems.json",
+        "count": 2
+      },
+      {
+        "file": "zh/modern/白话初创/沈尹默/poems.json",
+        "count": 3
+      },
+      {
+        "file": "zh/modern/白话初创/胡适/poems.json",
+        "count": 119
+      },
+      {
+        "file": "zh/modern/白话初创/鲁迅/poems.json",
+        "count": 19
+      },
+      {
+        "file": "zh/modern/象征派/王独清/poems.json",
+        "count": 8
+      },
+      {
+        "file": "zh/modern/象征派/穆木天/poems.json",
+        "count": 5
       }
     ],
     "en": [

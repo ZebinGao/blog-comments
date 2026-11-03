@@ -19,10 +19,11 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-/* 桶 → (目录前缀, 需下钻几层到作者目录)：zh/classical 隔着朝代一层 */
+/* 桶 → (目录前缀, 需下钻几层到作者目录)：zh/classical 隔着朝代一层，
+ * zh/modern 2026-11-03 起也隔一层——流派（白话初创/新月派/象征派/现代派/左翼/十七年） */
 const BUCKETS = [
     ['zhClassical', 'zh/classical', 1],
-    ['zhModern', 'zh/modern', 0],
+    ['zhModern', 'zh/modern', 1],
     ['en', 'en', 0],
     ['de', 'de', 0],
 ];
