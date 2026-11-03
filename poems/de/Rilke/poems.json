@@ -1,0 +1,23 @@
+{
+  "author": "Rilke",
+  "poems": [
+    {
+      "title": "Der Panther",
+      "year": 1902,
+      "stanzas": [
+        "Sein Blick ist vom Vorübergehn der Stäbe\nso müd geworden, daß er nichts mehr hält.\nIhm ist, als ob es tausend Stäbe gäbe\nund hinter tausend Stäben keine Welt.",
+        "Der weiche Gang geschmeidig starker Schritte,\nder sich im allerkleinsten Kreise dreht,\nist wie ein Tanz von Kraft um eine Mitte,\nin der betäubt ein großer Wille steht.",
+        "Nur manchmal schiebt der Vorhang der Pupille\nsich lautlos auf –. Dann geht ein Bild hinein,\ngeht durch der Glieder angespannte Stille –\nund hört im Herzen auf zu sein."
+      ]
+    },
+    {
+      "title": "Herbsttag",
+      "year": 1902,
+      "stanzas": [
+        "Herr: es ist Zeit. Der Sommer war sehr groß.\nLeg deinen Schatten auf die Sonnenuhren,\nund auf den Fluren laß die Winde los.",
+        "Befiehl den letzten Früchten voll zu sein;\ngib ihnen noch zwei südlichere Tage,\ndränge sie zur Vollendung hin, und jage\ndie letzte Süße in den schweren Wein.",
+        "Wer jetzt kein Haus hat, baut sich keines mehr.\nWer jetzt allein ist, wird es lange bleiben,\nwird wachen, lesen, lange Briefe schreiben\nund wird in den Alleen hin und her\nunruhig wandern, wenn die Blätter treiben."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "author": "Heine",
+  "poems": [
+    {
+      "title": "Du bist wie eine Blume",
+      "year": 1824,
+      "stanzas": [
+        "Du bist wie eine Blume,\nso hold und schön und rein;\nich schau dich an, und Wehmut\nschleicht mir ins Herz hinein.",
+        "Mir ist, als ob ich die Hände\naufs Haupt dir legen sollt',\nbetend, daß Gott dich erhalte\nso rein und schön und hold."
+      ]
+    },
+    {
+      "title": "Leise zieht durch mein Gemüt",
+      "year": 1830,
+      "stanzas": [
+        "Leise zieht durch mein Gemüt\nliebliches Geläute.\nKlinge, kleines Frühlingslied,\nkling hinaus ins Weite.",
+        "Kling hinaus bis an das Haus,\nwo die Blumen sprießen;\nwenn du eine Rose schaust,\nsag, ich laß sie grüßen."
+      ]
+    },
+    {
+      "title": "Loreley",
+      "year": 1824,
+      "stanzas": [
+        "Ich weiß nicht, was soll es bedeuten,\ndaß ich so traurig bin;\nein Märchen aus uralten Zeiten,\ndas kommt mir nicht aus dem Sinn.",
+        "Die Luft ist kühl und es dunkelt,\nund ruhig fließt der Rhein;\nder Gipfel des Berges funkelt\nim Abendsonnenschein.",
+        "Die schönste Jungfrau sitzet\ndort oben wunderbar;\nihr goldnes Geschmeide blitzet,\nsie kämmt ihr goldenes Haar,\nsie kämmt es mit goldnem Kamme,\nund singt ein Lied dabei;\ndas hat eine wundersame,\ngewaltige Melodei.",
+        "Den Schiffer im kleinen Schiffe\nergreift es mit wildem Weh;\ner schaut nicht die Felsenriffe,\ner schaut nur hinauf in die Höh.",
+        "Ich glaube, die Wellen verschlingen\nam Ende Schiffer und Kahn;\nund das hat mit ihrem Singen\ndie Loreley getan."
+      ]
+    }
+  ]
+}

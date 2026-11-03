@@ -1,0 +1,38 @@
+{
+  "author": "Lewis Carroll",
+  "poems": [
+    {
+      "title": "A Game of Fives",
+      "stanzas": [
+        "Five little girls, of Five, Four, Three, Two, One:\nRolling on the hearthrug, full of tricks and fun.",
+        "Five rosy girls, in years from Ten to Six:\nSitting down to lessons - no more time for tricks.",
+        "Five growing girls, from Fifteen to Eleven:\nMusic, Drawing, Languages, and food enough for seven!",
+        "Five winsome girls, from Twenty to Sixteen:\nEach young man that calls, I say \"Now tell me which you MEAN!\"",
+        "Five dashing girls, the youngest Twenty-one:\nBut, if nobody proposes, what is there to be done?",
+        "Five showy girls - but Thirty is an age\nWhen girls may be ENGAGING, but they somehow don't ENGAGE.",
+        "Five dressy girls, of Thirty-one or more:\nSo gracious to the shy young men they snubbed so much before!",
+        "Five PASSE girls - Their age? Well, never mind!\nWe jog along together, like the rest of human kind:\nBut the quondam \"careless bachelor\" begins to think he knows\nThe answer to that ancient problem \"how the money goes\"!"
+      ]
+    },
+    {
+      "title": "Another Acrostic (in the style of Father William)",
+      "stanzas": [
+        "\"Are you deaf, Father William!\" the young man said,\n\"Did you hear what I told you just now?\n\"Excuse me for shouting! Don't waggle your head\n\"Like a blundering, sleepy old cow!\n\"A little maid dwelling in Wallington Town,\n\"Is my friend, so I beg to remark:\n\"Do you think she'd be pleased if a book were sent down\n\"Entitled 'The Hunt of the Snark?'\"",
+        "\"Pack it up in brown paper!\" the old man cried,\n\"And seal it with olive-and-dove.\n\"I command you to do it!\" he added with pride,\n\"Nor forget, my good fellow to send her beside\n\"Easter Greetings, and give her my love.\""
+      ]
+    },
+    {
+      "title": "Brother and Sister",
+      "stanzas": [
+        "\"SISTER, sister, go to bed!\nGo and rest your weary head.\"\nThus the prudent brother said.",
+        "\"Do you want a battered hide,\nOr scratches to your face applied?\"\nThus his sister calm replied.",
+        "\"Sister, do not raise my wrath.\nI'd make you into mutton broth\nAs easily as kill a moth\"",
+        "The sister raised her beaming eye\nAnd looked on him indignantly\nAnd sternly answered, \"Only try!\"",
+        "Off to the cook he quickly ran.\n\"Dear Cook, please lend a frying-pan\nTo me as quickly as you can.\"",
+        "And wherefore should I lend it you?\"\n\"The reason, Cook, is plain to view.\nI wish to make an Irish stew.\"",
+        "\"What meat is in that stew to go?\"\n\"My sister'll be the contents!\"\n\"Oh\"\n\"You'll lend the pan to me, Cook?\"\n\"No!\"",
+        "Moral: Never stew your sister."
+      ]
+    }
+  ]
+}

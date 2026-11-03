@@ -1,0 +1,39 @@
+{
+  "author": "Goethe",
+  "poems": [
+    {
+      "title": "Gefunden",
+      "year": 1813,
+      "stanzas": [
+        "Ich ging im Walde\nSo für mich hin,\nund nichts zu suchen,\ndas war mein Sinn.",
+        "Im Schatten sah ich\nein Blümchen stehn,\nwie Sterne leuchtend,\nwie Äuglein schön.",
+        "Ich wollt es brechen,\nda sagt es fein:\nsoll ich zum Welken\ngebrochen sein?",
+        "Ich grub's mit allen\nden Würzlein aus,\nzum Garten trug ich's\nam hübschen Haus.",
+        "Und pflanzt es wieder\nam stillen Ort;\nnun zweigt es immer\nund blüht so fort."
+      ]
+    },
+    {
+      "title": "Heidenröslein",
+      "year": 1771,
+      "stanzas": [
+        "Sah ein Knab' ein Röslein stehn,\nRöslein auf der Heiden,\nwar so jung und morgenschön,\nlief er schnell, es nah zu sehn,\nsah's mit vielen Freuden.\nRöslein, Röslein, Röslein rot,\nRöslein auf der Heiden.",
+        "Knabe sprach: ich breche dich,\nRöslein auf der Heiden!\nRöslein sprach: ich steche dich,\ndaß du ewig denkst an mich,\nund ich will's nicht leiden.\nRöslein, Röslein, Röslein rot,\nRöslein auf der Heiden.",
+        "Und der wilde Knabe brach\n's Röslein auf der Heiden;\nRöslein wehrte sich und stach,\nhalf ihm doch kein Weh und Ach,\nmußt es eben leiden.\nRöslein, Röslein, Röslein rot,\nRöslein auf der Heiden."
+      ]
+    },
+    {
+      "title": "Wandrers Nachtlied",
+      "year": 1776,
+      "stanzas": [
+        "Der du von dem Himmel bist,\nAlles Leid und Schmerzen stillest,\nDen, der doppelt elend ist,\nDoppelt mit Erquickung füllest,\nAch, ich bin des Treibens müde!\nWas soll all der Schmerz und Lust?\nSüßer Friede,\nKomm, ach komm in meine Brust!"
+      ]
+    },
+    {
+      "title": "Über allen Gipfeln",
+      "year": 1780,
+      "stanzas": [
+        "Über allen Gipfeln\nIst Ruh,\nIn allen Wipfeln\nSpürest du\nKaum einen Hauch;\nDie Vögelein schweigen im Walde.\nWarte nur, balde\nRuhest du auch."
+      ]
+    }
+  ]
+}

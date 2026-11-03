@@ -1,0 +1,257 @@
+{
+  "generatedAt": "2026-11-03T03:47:23.032Z",
+  "totals": {
+    "zhClassical": 19068,
+    "zhModern": 15,
+    "en": 801,
+    "de": 13
+  },
+  "authorsPerBucket": {
+    "zhClassical": 32,
+    "zhModern": 6,
+    "en": 14,
+    "de": 6
+  },
+  "buckets": {
+    "zhClassical": [
+      {
+        "file": "zh/classical/五代/李煜/poems.json",
+        "count": 55
+      },
+      {
+        "file": "zh/classical/元/张养浩/poems.json",
+        "count": 92
+      },
+      {
+        "file": "zh/classical/元/白朴/poems.json",
+        "count": 288
+      },
+      {
+        "file": "zh/classical/元/马致远/poems.json",
+        "count": 411
+      },
+      {
+        "file": "zh/classical/唐/刘禹锡/poems.json",
+        "count": 413
+      },
+      {
+        "file": "zh/classical/唐/孟浩然/poems.json",
+        "count": 137
+      },
+      {
+        "file": "zh/classical/唐/李商隐/poems.json",
+        "count": 276
+      },
+      {
+        "file": "zh/classical/唐/李白/poems.json",
+        "count": 259
+      },
+      {
+        "file": "zh/classical/唐/李贺/poems.json",
+        "count": 37
+      },
+      {
+        "file": "zh/classical/唐/杜牧/poems.json",
+        "count": 196
+      },
+      {
+        "file": "zh/classical/唐/杜甫/poems.json",
+        "count": 770
+      },
+      {
+        "file": "zh/classical/唐/柳宗元/poems.json",
+        "count": 74
+      },
+      {
+        "file": "zh/classical/唐/王勃/poems.json",
+        "count": 53
+      },
+      {
+        "file": "zh/classical/唐/王昌龄/poems.json",
+        "count": 21
+      },
+      {
+        "file": "zh/classical/唐/王维/poems.json",
+        "count": 143
+      },
+      {
+        "file": "zh/classical/唐/白居易/poems.json",
+        "count": 1082
+      },
+      {
+        "file": "zh/classical/宋/李清照/poems.json",
+        "count": 58
+      },
+      {
+        "file": "zh/classical/宋/杨万里/poems.json",
+        "count": 1299
+      },
+      {
+        "file": "zh/classical/宋/欧阳修/poems.json",
+        "count": 558
+      },
+      {
+        "file": "zh/classical/宋/王安石/poems.json",
+        "count": 634
+      },
+      {
+        "file": "zh/classical/宋/苏轼/poems.json",
+        "count": 1263
+      },
+      {
+        "file": "zh/classical/宋/范成大/poems.json",
+        "count": 806
+      },
+      {
+        "file": "zh/classical/宋/辛弃疾/poems.json",
+        "count": 665
+      },
+      {
+        "file": "zh/classical/宋/陆游/poems.json",
+        "count": 5080
+      },
+      {
+        "file": "zh/classical/宋/黄庭坚/poems.json",
+        "count": 760
+      },
+      {
+        "file": "zh/classical/汉/曹操/poems.json",
+        "count": 11
+      },
+      {
+        "file": "zh/classical/清/纳兰性德/poems.json",
+        "count": 419
+      },
+      {
+        "file": "zh/classical/清/袁枚/poems.json",
+        "count": 1699
+      },
+      {
+        "file": "zh/classical/清/郑燮/poems.json",
+        "count": 37
+      },
+      {
+        "file": "zh/classical/清/黄景仁/poems.json",
+        "count": 756
+      },
+      {
+        "file": "zh/classical/清/龚自珍/poems.json",
+        "count": 211
+      },
+      {
+        "file": "zh/classical/金/元好问/poems.json",
+        "count": 505
+      }
+    ],
+    "zhModern": [
+      {
+        "file": "zh/modern/刘半农/poems.json",
+        "count": 1
+      },
+      {
+        "file": "zh/modern/徐志摩/poems.json",
+        "count": 5
+      },
+      {
+        "file": "zh/modern/戴望舒/poems.json",
+        "count": 3
+      },
+      {
+        "file": "zh/modern/李叔同/poems.json",
+        "count": 1
+      },
+      {
+        "file": "zh/modern/林徽因/poems.json",
+        "count": 2
+      },
+      {
+        "file": "zh/modern/闻一多/poems.json",
+        "count": 3
+      }
+    ],
+    "en": [
+      {
+        "file": "en/Andrew Marvell/poems.json",
+        "count": 1
+      },
+      {
+        "file": "en/Christina Rossetti/poems.json",
+        "count": 6
+      },
+      {
+        "file": "en/Edgar Allan Poe/poems.json",
+        "count": 25
+      },
+      {
+        "file": "en/Edward Lear/poems.json",
+        "count": 1
+      },
+      {
+        "file": "en/Emily Dickinson/poems.json",
+        "count": 429
+      },
+      {
+        "file": "en/John Donne/poems.json",
+        "count": 22
+      },
+      {
+        "file": "en/John Keats/poems.json",
+        "count": 12
+      },
+      {
+        "file": "en/Lewis Carroll/poems.json",
+        "count": 3
+      },
+      {
+        "file": "en/Robert Burns/poems.json",
+        "count": 47
+      },
+      {
+        "file": "en/Robert Herrick/poems.json",
+        "count": 44
+      },
+      {
+        "file": "en/Samuel Coleridge/poems.json",
+        "count": 12
+      },
+      {
+        "file": "en/William Blake/poems.json",
+        "count": 38
+      },
+      {
+        "file": "en/William Shakespeare/poems.json",
+        "count": 159
+      },
+      {
+        "file": "en/William Wordsworth/poems.json",
+        "count": 2
+      }
+    ],
+    "de": [
+      {
+        "file": "de/Eichendorff/poems.json",
+        "count": 2
+      },
+      {
+        "file": "de/Goethe/poems.json",
+        "count": 4
+      },
+      {
+        "file": "de/Heine/poems.json",
+        "count": 3
+      },
+      {
+        "file": "de/Mörike/poems.json",
+        "count": 1
+      },
+      {
+        "file": "de/Rilke/poems.json",
+        "count": 2
+      },
+      {
+        "file": "de/Uhland/poems.json",
+        "count": 1
+      }
+    ]
+  }
+}

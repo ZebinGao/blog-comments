@@ -1,0 +1,22 @@
+{
+  "author": "Eichendorff",
+  "poems": [
+    {
+      "title": "In der Fremde",
+      "year": 1837,
+      "stanzas": [
+        "Aus der Heimat hinter den Blitzen rot\nda kommen die Wolken hergezogen,\naber Vater und Mutter sind lange tot,\nes kennt mich dort keiner mehr.",
+        "Wie bald, wie bald kommt die stille Zeit,\nda ruhe auch ich, und über mir\nrauscht die schöne Waldeinsamkeit,\nund keiner mehr kennt mich auch hier."
+      ]
+    },
+    {
+      "title": "Mondnacht",
+      "year": 1837,
+      "stanzas": [
+        "Es war, als hätt der Himmel\ndie Erde still geküßt,\ndaß sie im Blütenschimmer\nvon ihm nun träumen müßt.",
+        "Die Luft ging durch die Felder,\ndie Ähren wogten sacht,\nes rauschten leis die Wälder,\nso sternklar war die Nacht.",
+        "Und meine Seele spannte\nweit ihre Flügel aus,\nflog durch die stillen Lande,\nals flöge sie nach Haus."
+      ]
+    }
+  ]
+}

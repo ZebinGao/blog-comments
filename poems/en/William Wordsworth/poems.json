@@ -1,0 +1,25 @@
+{
+  "author": "William Wordsworth",
+  "poems": [
+    {
+      "title": "I Wandered Lonely As a Cloud",
+      "stanzas": [
+        "I wandered lonely as a cloud\nThat floats on high o'er vales and hills,\nWhen all at once I saw a crowd,\nA host, of golden daffodils;\nBeside the lake, beneath the trees,\nFluttering and dancing in the breeze.",
+        "Continuous as the stars that shine\nAnd twinkle on the milky way,\nThey stretched in never-ending line\nAlong the margin of a bay:\nTen thousand saw I at a glance,\nTossing their heads in sprightly dance.",
+        "The waves beside them danced, but they\nOut-did the sparkling leaves in glee;\nA poet could not be but gay,\nIn such a jocund company!\nI gazed—and gazed—but little thought\nWhat wealth the show to me had brought:",
+        "For oft, when on my couch I lie\nIn vacant or in pensive mood,\nThey flash upon that inward eye\nWhich is the bliss of solitude;\nAnd then my heart with pleasure fills,\nAnd dances with the daffodils."
+      ]
+    },
+    {
+      "title": "Lines Written in Early Spring",
+      "stanzas": [
+        "I heard a thousand blended notes,\nWhile in a grove I sate reclined,\nIn that sweet mood when pleasant thoughts\nBring sad thoughts to the mind.",
+        "To her fair works did Nature link\nThe human soul that through me ran;\nAnd much it grieved my heart to think\nWhat man has made of man.",
+        "Through primrose tufts, in that green bower,\nThe periwinkle trailed its wreaths;\nAnd 'tis my faith that every flower\nEnjoys the air it breathes.",
+        "The birds around me hopped and played,\nTheir thoughts I cannot measure:--\nBut the least motion which they made\nIt seemed a thrill of pleasure.",
+        "The budding twigs spread out their fan,\nTo catch the breezy air;\nAnd I must think, do all I can,\nThat there was pleasure there.",
+        "If this belief from heaven be sent,\nIf such be Nature's holy plan,\nHave I not reason to lament\nWhat man has made of man?"
+      ]
+    }
+  ]
+}
