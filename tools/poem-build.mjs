@@ -49,8 +49,9 @@ function hash(str) {
     return h;
 }
 
-/* 只服务智谱 API（语料全在本地）：3 次退避重试 */
-async function fetchText(url, init = {}, timeoutMs = 180000) {
+/* 只服务智谱 API（语料全在本地）：3 次退避重试。正常 1–2 分钟内返回，超时
+ * 2 分钟即掐（2026-11-03 批量连环超时根因是 token 额度耗尽挂起，非模型慢）。 */
+async function fetchText(url, init = {}, timeoutMs = 120000) {
     let lastErr;
     for (let i = 1; i <= 3; i++) {
         try {
@@ -157,6 +158,9 @@ async function annotate(kind, meta, title, poemText) {
                         { role: 'user', content: ask },
                     ],
                     temperature: 0.3,
+                    // glm-5.3 默认思考，注释类结构化任务不需要：实测 16 token 都要
+                    // 20s 且全烧在 reasoning 上，出长 JSON 必超时；关掉降到秒级
+                    thinking: { type: 'disabled' },
                     response_format: { type: 'json_object' },
                 }),
             });

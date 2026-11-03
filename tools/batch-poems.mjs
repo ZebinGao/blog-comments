@@ -11,8 +11,9 @@
  * （预生成要存一个月，宁缺勿滥），重跑本脚本即补。
  *
  * 用法（本仓库根目录，缺省当月）：
- *   node tools/batch-poems.mjs [YYYY-MM] [--from YYYY-MM-DD] [--force]
+ *   node tools/batch-poems.mjs [YYYY-MM] [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--force]
  *     --from   只生成该日起（跳过已过期的日子，如 11 月 3 日才跑就从 11-04 起）
+ *     --to     只生成到该日止——七天一段滚动生成，跑完一段看一眼再续下一段
  *     --force  已有日期也重做（默认跳过，幂等可续跑）
  * 语料（poems/）有增删的话，先重跑 poem-index.mjs 并提交，否则抽的作者池
  * 会和已生成的月份不一致。
@@ -36,6 +37,7 @@ async function main() {
     const now = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai' }).format(new Date());
     const month = args.find(a => /^\d{4}-(0[1-9]|1[0-2])$/.test(a)) || now.slice(0, 7);
     const from = opt('--from') || `${month}-01`; // YYYY-MM-DD 字符串序比较即可
+    const to = opt('--to') || `${month}-31`;
 
     if (!process.env.ZHIPU_API_KEY) throw new Error('未设置 ZHIPU_API_KEY（注释必需），拒跑');
 
@@ -51,7 +53,7 @@ async function main() {
     let enCached = null, deCached = null, cachedStart = ''; // 英德组内复用：缓存组首日构建结果
     for (let d = 1; d <= days; d++) {
         const date = `${month}-${String(d).padStart(2, '0')}`;
-        if (date < from) continue;
+        if (date < from || date > to) continue;
         const file = path.join(outDir, `${date}.json`);
         if (!force) {
             try { JSON.parse(await readFile(file, 'utf8')); skipped++; continue; } catch { /* 尚未生成 */ }
