@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-03T06:13:27.004Z",
+  "generatedAt": "2026-11-03T07:23:59.221Z",
   "totals": {
     "zhClassical": 19068,
-    "zhModern": 481,
+    "zhModern": 3894,
     "en": 801,
     "de": 13
   },
   "authorsPerBucket": {
     "zhClassical": 32,
-    "zhModern": 24,
+    "zhModern": 49,
     "en": 14,
     "de": 6
   },
@@ -145,12 +145,64 @@
     ],
     "zhModern": [
       {
+        "file": "zh/modern/中间代/哑石/poems.json",
+        "count": 206
+      },
+      {
+        "file": "zh/modern/中间代/安琪/poems.json",
+        "count": 846
+      },
+      {
+        "file": "zh/modern/中间代/陈先发/poems.json",
+        "count": 278
+      },
+      {
+        "file": "zh/modern/九叶派/穆旦/poems.json",
+        "count": 158
+      },
+      {
+        "file": "zh/modern/九叶派/郑敏/poems.json",
+        "count": 32
+      },
+      {
+        "file": "zh/modern/创造社浪漫/郭沫若/poems.json",
+        "count": 25
+      },
+      {
+        "file": "zh/modern/十七年/郭小川/poems.json",
+        "count": 13
+      },
+      {
         "file": "zh/modern/十七年/闻捷/poems.json",
         "count": 4
       },
       {
+        "file": "zh/modern/台湾现代诗/余光中/poems.json",
+        "count": 48
+      },
+      {
+        "file": "zh/modern/台湾现代诗/痖弦/poems.json",
+        "count": 42
+      },
+      {
+        "file": "zh/modern/小诗体/冰心/poems.json",
+        "count": 373
+      },
+      {
         "file": "zh/modern/左翼/殷夫/poems.json",
         "count": 1
+      },
+      {
+        "file": "zh/modern/左翼/田间/poems.json",
+        "count": 5
+      },
+      {
+        "file": "zh/modern/左翼/臧克家/poems.json",
+        "count": 7
+      },
+      {
+        "file": "zh/modern/左翼/艾青/poems.json",
+        "count": 26
       },
       {
         "file": "zh/modern/新月派/徐志摩/poems.json",
@@ -183,6 +235,38 @@
       {
         "file": "zh/modern/新月派/饶孟侃/poems.json",
         "count": 2
+      },
+      {
+        "file": "zh/modern/朦胧诗/北岛/poems.json",
+        "count": 224
+      },
+      {
+        "file": "zh/modern/朦胧诗/舒婷/poems.json",
+        "count": 40
+      },
+      {
+        "file": "zh/modern/朦胧诗/顾城/poems.json",
+        "count": 487
+      },
+      {
+        "file": "zh/modern/朦胧诗/食指/poems.json",
+        "count": 24
+      },
+      {
+        "file": "zh/modern/民间写作/于坚/poems.json",
+        "count": 112
+      },
+      {
+        "file": "zh/modern/现代派/何其芳/poems.json",
+        "count": 21
+      },
+      {
+        "file": "zh/modern/现代派/冯至/poems.json",
+        "count": 42
+      },
+      {
+        "file": "zh/modern/现代派/卞之琳/poems.json",
+        "count": 39
       },
       {
         "file": "zh/modern/现代派/废名/poems.json",
@@ -231,6 +315,22 @@
       {
         "file": "zh/modern/白话初创/鲁迅/poems.json",
         "count": 19
+      },
+      {
+        "file": "zh/modern/神性写作/昌耀/poems.json",
+        "count": 35
+      },
+      {
+        "file": "zh/modern/神性写作/海子/poems.json",
+        "count": 266
+      },
+      {
+        "file": "zh/modern/神性写作/西川/poems.json",
+        "count": 47
+      },
+      {
+        "file": "zh/modern/象征派/李金发/poems.json",
+        "count": 17
       },
       {
         "file": "zh/modern/象征派/王独清/poems.json",

@@ -20,7 +20,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 /* 桶 → (目录前缀, 需下钻几层到作者目录)：zh/classical 隔着朝代一层，
- * zh/modern 2026-11-03 起也隔一层——流派（白话初创/新月派/象征派/现代派/左翼/十七年） */
+ * zh/modern 2026-11-03 起也隔一层——流派（14 派，名单见 harvest-poetry-sheepzh.mjs 的 POETS 表） */
 const BUCKETS = [
     ['zhClassical', 'zh/classical', 1],
     ['zhModern', 'zh/modern', 1],
