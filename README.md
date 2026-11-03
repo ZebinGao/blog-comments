@@ -1,6 +1,6 @@
 # blog-comments
 
-博客的数据仓库（公开）。
+博客的数据仓库。
 
 - **Issues** —— 评论
 - **poems/** —— 语料库（中/英/德 101 位作者 23776 首），结构与维护见 [poems/README.md](poems/README.md)
