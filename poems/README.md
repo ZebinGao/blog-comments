@@ -8,7 +8,7 @@ poems/
   zh/classical/{朝代}/{作者}/ 中文古典（收割自搜韵开放接口）
   zh/modern/{流派}/{作者}/     中文新诗（收割自 sheepzh/poetry，全名单 49 位见下表）
   en/{作者}/                  英文（收割自 PoetryDB）
-  de/{作者}/                  德文（手工录入）
+  de/{作者}/                  德文（6 位手录经典 + PG 三本诗集收割：Schiller/Storm/Busch）
 ```
 
 `zh/modern` 的流派层按文学史通行分期（《中国现代文学三十年》+ 洪子诚《中国
@@ -48,6 +48,7 @@ poems/
 - **加诗**：往对应作者的 `poems.json` 数组里追加；**加作者**：建目录写两个 json
 - **收割补量**（都在本仓库 tools/ 下，幂等可重跑）：`harvest-poetry-sheepzh.mjs`
   （sheepzh/poetry → zh/modern，作者名单即脚本 POETS 表，本地需代理）、
-  `harvest-souyun.mjs`（搜韵 → zh/classical）、`harvest-poetrydb.mjs`（PoetryDB → en）；
+  `harvest-souyun.mjs`（搜韵 → zh/classical）、`harvest-poetrydb.mjs`（PoetryDB → en）、
+  `harvest-gutenberg-de.mjs`（Project Gutenberg 德语诗集 → de，三本书单即脚本 BOOKS 表）；
   sheepzh 版与老条目按标题合并去重，其余幂等覆盖 `poems.json`；均不碰手补的 `author.json`
 - **任何增删之后**：在本仓库根目录跑 `node tools/poem-index.mjs` 重建 `index.json`，一起提交

@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-03T07:23:59.221Z",
+  "generatedAt": "2026-11-03T08:26:57.715Z",
   "totals": {
     "zhClassical": 19068,
     "zhModern": 3894,
     "en": 801,
-    "de": 13
+    "de": 154
   },
   "authorsPerBucket": {
     "zhClassical": 32,
     "zhModern": 49,
     "en": 14,
-    "de": 6
+    "de": 9
   },
   "buckets": {
     "zhClassical": [
@@ -401,6 +401,10 @@
     ],
     "de": [
       {
+        "file": "de/Busch/poems.json",
+        "count": 74
+      },
+      {
         "file": "de/Eichendorff/poems.json",
         "count": 2
       },
@@ -419,6 +423,14 @@
       {
         "file": "de/Rilke/poems.json",
         "count": 2
+      },
+      {
+        "file": "de/Schiller/poems.json",
+        "count": 17
+      },
+      {
+        "file": "de/Storm/poems.json",
+        "count": 50
       },
       {
         "file": "de/Uhland/poems.json",
