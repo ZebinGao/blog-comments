@@ -11,7 +11,11 @@
  * （预生成要存一个月，宁缺勿滥），重跑本脚本即补。
  *
  * 用法（本仓库根目录，缺省当月）：
- *   node tools/batch-poems.mjs [YYYY-MM] [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--force]
+ *   node tools/batch-poems.mjs [YYYY-MM] [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--force] [--plan]
+ *     --plan   只打印整月选诗清单与正文（不调 GLM）——交给 Claude 逐首写注释进
+ *              daily/{月}/notes.json（键 `${选诗日期}:${kind}`，条目须带 title
+ *              诗名，语料变动后不符的手注自动作废），再跑本脚本：有手注的键
+ *              直接用，缺的才走智谱 API
  *     --from   只生成该日起（跳过已过期的日子，如 11 月 3 日才跑就从 11-04 起）
  *     --to     只生成到该日止——七天一段滚动生成，跑完一段看一眼再续下一段
  *     --force  已有日期也重做（默认跳过，幂等可续跑）
@@ -25,7 +29,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { buildZh, buildZhModern, buildEn, buildDe, periodOf } from './poem-build.mjs';
+import { buildZh, buildZhModern, buildEn, buildDe, periodOf, planDay } from './poem-build.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -39,10 +43,27 @@ async function main() {
     const from = opt('--from') || `${month}-01`; // YYYY-MM-DD 字符串序比较即可
     const to = opt('--to') || `${month}-31`;
 
-    if (!process.env.ZHIPU_API_KEY) throw new Error('未设置 ZHIPU_API_KEY（注释必需），拒跑');
-
     const mm = month.slice(5, 7);
     const days = new Date(+month.slice(0, 4), +mm, 0).getDate();
+
+    if (args.includes('--plan')) { // 只看选诗，不需要密钥
+        for (let d = 1; d <= days; d++) {
+            const date = `${month}-${String(d).padStart(2, '0')}`;
+            if (date < from || date > to) continue;
+            const r = await planDay(date);
+            const show = (kind, selDate, p) => console.log(
+                `\n[${kind} @ ${selDate}] ${p.meta}\n《${p.title}》\n${p.stanzas.join('\n\n')}`);
+            console.log(`\n== ${date} ==`);
+            show('zh', date, r.zh);
+            show('modern', date, r.zhModern);
+            show('en', periodOf(date).start, r.en);
+            show('de', periodOf(date).start, r.de);
+        }
+        return;
+    }
+
+    if (!process.env.ZHIPU_API_KEY) throw new Error('未设置 ZHIPU_API_KEY（注释必需），拒跑');
+
     const outDir = path.join(ROOT, 'daily', mm);
     await mkdir(outDir, { recursive: true });
 
