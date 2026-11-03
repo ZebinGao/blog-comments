@@ -16,9 +16,11 @@
  * 中文两页选诗日期就是当天，英德用所在六天组的组首日（组内同一首）；同一天
  * 跑几遍四页各是同一首，语料增删导致 index.json 变化才会换诗。
  *
- * 注释 + 翻译：智谱 GLM（需 ZHIPU_API_KEY），每语种独立 prompt——古典出难词
- * 拼音+释义、英文出音标+释义、德语出词性+中文释义、现代诗只出赏析不要白话
- * 翻译。strict 模式（批量用）注释失败即抛错拒收当日，重跑 batch 即补。
+ * 注释 + 翻译：优先读 daily/{月}/notes.json 的手工注释（Claude 每月批量写作，
+ * 键 `${选诗日期}:${kind}`，英德用组首日），缺的键才调智谱 GLM（需
+ * ZHIPU_API_KEY），每语种独立 prompt——古典出难词拼音+释义、英文出音标+释义、
+ * 德语出词性+中文释义、现代诗只出赏析不要白话翻译。strict 模式（批量用）注释
+ * 失败即抛错拒收当日，重跑 batch 即补（或补写 notes.json 对应键）。
  */
 'use strict';
 
@@ -138,15 +140,30 @@ const ASKS = {
         + 'notes 按诗中出现顺序 5-10 条，只收对德语学习者偏难的词（保留文中变位形式）；德语词原样，释义用中文。',
 };
 
-async function annotate(kind, meta, title, poemText) {
+/* 手工注释（Claude 每月批量写作）优先于 GLM：daily/{月}/notes.json，键
+ * `${选诗日期}:${kind}`（英德用组首日），值 {notes, translation?, brief, model?}。
+ * 有手注不调 API——限流/额度/超时全免；缺键回落 GLM。 */
+let _notes;
+async function getNotes(selDate) {
+    if (_notes === undefined) {
+        const file = path.resolve(POEMS_DIR, '..', 'daily', selDate.slice(5, 7), 'notes.json');
+        _notes = await readFile(file, 'utf8').then(t => JSON.parse(t)).catch(() => ({}));
+    }
+    return _notes;
+}
+
+async function annotate(kind, selDate, meta, title, poemText) {
+    const hand = (await getNotes(selDate))[`${selDate}:${kind}`];
+    if (hand && Array.isArray(hand.notes)) return { model: 'Claude', ...hand };
     const key = process.env.ZHIPU_API_KEY;
     if (!key) {
         console.warn(`  [${kind}] 未设置 ZHIPU_API_KEY，跳过注释翻译，页面只出诗本身`);
         return null;
     }
-    const model = process.env.ZHIPU_MODEL || 'glm-5.3';
+    const model = `智谱 ${process.env.ZHIPU_MODEL || 'glm-5.3'}`;
     const ask = ASKS[kind](meta, title, poemText);
-    for (let attempt = 1; attempt <= 2; attempt++) {
+    // 3 次尝试：关思考后偶发 JSON 不守契约（缺 translation 之类），两次连撞的概率不低
+    for (let attempt = 1; attempt <= 3; attempt++) {
         try {
             const resp = await getJson(ZHIPU_API, {
                 method: 'POST',
@@ -171,7 +188,7 @@ async function annotate(kind, meta, title, poemText) {
             const okNotes = Array.isArray(out.notes);
             const okTranslation = !needTranslation || typeof out.translation === 'string';
             if (okNotes && okTranslation) return { ...out, model };
-            throw new Error('JSON 结构不对');
+            throw new Error(`JSON 结构不对（实际字段：${Object.keys(out).join(',')}）`);
         } catch (err) {
             console.warn(`  [${kind}] 注释第 ${attempt} 次失败：${err.message}`);
         }
@@ -230,6 +247,17 @@ async function pickListed(date, bucket, salt) {
     };
 }
 
+/* 单日四页的选诗一览（不注释）：batch --plan 打印给 Claude 逐首写
+ * daily/{月}/notes.json（键 = `${选诗日期}:${kind}`，en/de 用组首日）。 */
+export async function planDay(date) {
+    const { start } = periodOf(date);
+    const [zh, zhModern, en, de] = await Promise.all([
+        pickZhClassical(date), pickListed(date, 'zhModern', ':zh-modern'),
+        pickListed(start, 'en', ':en'), pickListed(start, 'de', ':de'),
+    ]);
+    return { zh, zhModern, en, de };
+}
+
 /* ── 四页组页：各自选诗 + 注释（并行），返回 {file, md, log} ──
  *    opts.gen 换页脚的生成方式标注；opts.strict = true 时注释失败直接抛
  *    （批量预生成用，宁缺勿滥）。 */
@@ -265,12 +293,12 @@ export async function buildZh(date, opts = {}) {
     const gen = opts.gen || '批量预生成';
     const md = [...frontMatter(date, 'zh-classical')];
     const p = await pickZhClassical(date);
-    const anno = await annotate('zh', p.meta, p.title, p.stanzas.join('\n'));
+    const anno = await annotate('zh', date, p.meta, p.title, p.stanzas.join('\n'));
     if (opts.strict && !anno) throw new Error('GLM 注释失败（strict 拒收，重跑即补）');
     md.push(`## 《${mdSafe(p.title)}》`, '', mdSafe(p.meta), '',
         ...quoteBlock(p.stanzas), '', ...sections(anno, '### 白话翻译'), '');
     md.push('---', '', `选诗：古典语料（来自[搜韵](https://cnkgraph.com)）`
-        + (anno ? ` · 注释翻译：智谱 ${anno.model}（${gen}）` : ' · 自动选诗'), '');
+        + (anno ? ` · 注释翻译：${anno.model}（${gen}）` : ' · 自动选诗'), '');
     return { file: 'index.md', md, log: `中文(古典) ${date} → [${p.meta}]《${p.title}》` };
 }
 
@@ -279,7 +307,7 @@ export async function buildZhModern(date, opts = {}) {
     const gen = opts.gen || '批量预生成';
     const md = [...frontMatter(date, 'zh-modern', '朝华章 · 现代')];
     const p = await pickListed(date, 'zhModern', ':zh-modern');
-    const anno = await annotate('modern', p.meta, p.title, p.stanzas.join('\n\n'));
+    const anno = await annotate('modern', date, p.meta, p.title, p.stanzas.join('\n\n'));
     if (opts.strict && !anno) throw new Error('GLM 注释失败（strict 拒收，重跑即补）');
     md.push(`## 《${mdSafe(p.title)}》`, '', `${mdSafe(p.meta)} 年`, '', ...quoteBlock(p.stanzas), '');
     if (anno && anno.notes.length) {
@@ -291,7 +319,7 @@ export async function buildZhModern(date, opts = {}) {
     }
     if (anno && anno.brief) md.push('### 赏析', '', mdSafe(anno.brief), '');
     md.push('---', '', `选诗：现代语料（来自[Github](https://github.com/sheepzh/poetry)）`
-        + (anno ? ` · 注释赏析：智谱 ${anno.model}（${gen}）` : ' · 自动选诗'), '');
+        + (anno ? ` · 注释赏析：${anno.model}（${gen}）` : ' · 自动选诗'), '');
     return { file: 'modern.md', md, log: `中文(现代) ${date} → [${p.meta}]《${p.title}》` };
 }
 
@@ -300,13 +328,13 @@ export async function buildEn(date, opts = {}) {
     const gen = opts.gen || '批量预生成';
     const { start, label } = periodOf(date);
     const p = await pickListed(start, 'en', ':en');
-    const anno = await annotate('en', p.meta, p.title, p.stanzas.join('\n\n'));
+    const anno = await annotate('en', start, p.meta, p.title, p.stanzas.join('\n\n'));
     if (opts.strict && !anno) throw new Error('GLM 注释失败（strict 拒收，重跑即补）');
     const md = [...frontMatter(date, 'en', '朝华章 · English'),
         `## "${mdSafe(p.title)}"`, '', mdSafe(p.meta), '', ...quoteBlock(p.stanzas), '',
         ...sections(anno, '### 中文译文'), '',
         '---', '', `选诗：英文语料（来自[PoetryDB](https://poetrydb.org)）`
-        + (anno ? ` · 注释翻译：智谱 ${anno.model}（${gen}）` : ' · 自动选诗')
+        + (anno ? ` · 注释翻译：${anno.model}（${gen}）` : ' · 自动选诗')
         + ` · 本期 ${label}`, ''];
     return { file: 'en.md', md, log: `英文 ${label} → [${p.meta}] "${p.title}"` };
 }
@@ -315,13 +343,13 @@ export async function buildDe(date, opts = {}) {
     const gen = opts.gen || '批量预生成';
     const { start, label } = periodOf(date);
     const p = await pickListed(start, 'de', ':de');
-    const anno = await annotate('de', p.meta, p.title, p.stanzas.join('\n\n'));
+    const anno = await annotate('de', start, p.meta, p.title, p.stanzas.join('\n\n'));
     if (opts.strict && !anno) throw new Error('GLM 注释失败（strict 拒收，重跑即补）');
     const md = [...frontMatter(date, 'de', '朝华章 · Deutsch'),
         `## „${mdSafe(p.title)}“`, '', mdSafe(p.meta), '', ...quoteBlock(p.stanzas), '',
         ...sections(anno, '### 中文译文'), '',
         '---', '', `选诗：德语语料（Gutenberg project）`
-        + (anno ? ` · 注释翻译：智谱 ${anno.model}（${gen}）` : ' · 自动选诗')
+        + (anno ? ` · 注释翻译：${anno.model}（${gen}）` : ' · 自动选诗')
         + ` · 本期 ${label}`, ''];
     return { file: 'de.md', md, log: `德文 ${label} → [${p.meta}] „${p.title}“` };
 }
