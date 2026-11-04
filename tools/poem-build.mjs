@@ -16,7 +16,7 @@
  * 中文两页选诗日期就是当天，英德用所在六天组的组首日（组内同一首）；同一天
  * 跑几遍四页各是同一首，语料增删导致 index.json 变化才会换诗。
  *
- * 注释 + 翻译：优先读 daily/{月}/notes.json 的手工注释（Claude 每月批量写作，
+ * 注释 + 翻译：优先读 daily/{年}/{月}/notes.json 的手工注释（Claude 每月批量写作，
  * 键 `${选诗日期}:${kind}`，英德用组首日），缺的键才调智谱 GLM（需
  * ZHIPU_API_KEY），每语种独立 prompt——古典出难词拼音+释义、英文出音标+释义、
  * 德语出词性+中文释义、现代诗只出赏析不要白话翻译。strict 模式（批量用）注释
@@ -144,14 +144,14 @@ const ASKS = {
         + 'notes 按诗中出现顺序 5-10 条，只收对德语学习者偏难的词（保留文中变位形式）；德语词原样，释义用中文。',
 };
 
-/* 手工注释（Claude 每月批量写作）优先于 GLM：daily/{月}/notes.json，键
+/* 手工注释（Claude 每月批量写作）优先于 GLM：daily/{年}/{月}/notes.json，键
  * `${选诗日期}:${kind}`（英德用组首日），值 {title, notes, translation?, brief}。
  * title 记注释对象诗名——语料变动导致重选时诗名对不上，手注作废走 GLM，
  * 防张冠李戴。有手注不调 API——限流/额度/超时全免；缺键回落 GLM。 */
 let _notes;
 async function getNotes(selDate) {
     if (_notes === undefined) {
-        const file = path.resolve(POEMS_DIR, '..', 'daily', selDate.slice(5, 7), 'notes.json');
+        const file = path.resolve(POEMS_DIR, '..', 'daily', selDate.slice(0, 4), selDate.slice(5, 7), 'notes.json');
         _notes = await readFile(file, 'utf8').then(t => JSON.parse(t)).catch(() => ({}));
     }
     return _notes;
