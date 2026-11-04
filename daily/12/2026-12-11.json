@@ -1,0 +1,24 @@
+{
+  "date": "2026-12-11",
+  "generatedAt": "2026-11-04T02:45:34.193Z",
+  "zh": {
+    "file": "index.md",
+    "log": "中文(古典) 2026-12-11 → [唐 · 杜甫 · 律诗]《送张二十参军赴蜀州因呈杨五侍御》",
+    "md": "---\ntitle: 朝华章\ndate: 2026-12-11 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-classical\n---\n\n## 《送张二十参军赴蜀州因呈杨五侍御》\n\n唐 · 杜甫 · 律诗\n\n> 好去张公子，通家别恨添。  \n> 两行秦树直，万点(一作朵)蜀山尖。  \n> 御史新骢马，参军旧紫髯。  \n> 皇华吾善处，于汝定无嫌。\n\n### 注释\n\n- **通家**：世代交好之家——口气亲不拘礼的由来\n- **秦树直 / 蜀山尖**：秦地（长安一带）树行行齐直，蜀山峰峰攒尖：送者在秦、行者入蜀，十字写尽两地形胜\n- **骢马**：cōng mǎ：青白杂色之马；东汉桓典为御史，常乘骢马，京师畏惮，后以“骢马”代御史\n- **紫髯**：zǐ rán：紫黑色的胡须；以形貌戏称张参军之老成英气\n- **皇华**：《诗经·小雅·皇皇者华》为使臣之诗，后以“皇华”代奉使之人，此指杨侍御\n- **于汝定无嫌**：担保之辞：我与杨相处甚好，你去必无嫌隙——送人而兼作荐书\n\n### 白话翻译\n\n好去啊张公子，通家之谊，别恨又添一层。  秦地的树两行齐直，蜀地的山万点尖峰。  御史新骑上骢马，参军依旧留着紫髯。  奉使的杨君与我相处很好，  你到他那里，定然没有嫌隙。\n\n### 简析\n\n老杜送张参军入蜀、兼呈杨侍御之作。好处全在熟不拘礼：起句“好去张公子”如口语招手；颔联“两行秦树直，万点蜀山尖”，直与尖的几何对照，是杜诗炼字最干净处之一；后四句干脆做起介绍人——数御史的新骢马、参军的旧紫髯，再担保一句“于汝定无嫌”。送别诗写得像替人递荐书，只有对通家子侄辈才有的口气。\n\n\n---\n\n选诗：古典语料（来自[搜韵](https://cnkgraph.com)） · 注释翻译：Claude（预生成）\n\n"
+  },
+  "zhModern": {
+    "file": "modern.md",
+    "log": "中文(现代) 2026-12-11 → [饶孟侃 · 1902–1967]《招魂》",
+    "md": "---\ntitle: 朝华章 · 现代\ndate: 2026-12-11 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-modern\n---\n\n## 《招魂》\n\n饶孟侃 · 1902–1967 年\n\n> ——吊亡友杨子惠  \n> 来，你不要迟疑，  \n> 趁此刻鸡还没有啼；  \n> 你瞧远远一点灯光，  \n> 渔火似的一暗一亮——  \n> 那灯下是我在等你。  \n> 来，你不要迟疑！  \n> 来，为什么徘徊？  \n> 我泡一壶茶等你来。  \n> 你看这一只只白鹤，  \n> 一只只在壶上飞着，  \n> 是不是往日的安排？  \n> 来，为什么徘徊？  \n> 来，用不着犹夷；  \n> 趁我在发愣没想起，  \n> 你只管轻轻的进来，  \n> 你落叶飘下了庭阶，  \n> 冷不防给我个惊喜。  \n> 来，用不着犹夷！\n\n### 注释\n\n- **招魂**：《楚辞》篇名，为亡者唤魂之辞；副题“吊亡友杨子惠”点明本事\n- **趁此刻鸡还没有啼**：民俗谓魂灵夜行、鸡鸣须归——邀魂的时间限制藏在第一句里\n- **渔火似的一暗一亮**：灯火如江上渔火，明灭在阴阳之间\n- **白鹤在壶上飞着**：茶壶上画的白鹤，旧日对饮的信物；画中之物忽然“飞着”，静物起了一层寒意\n- **你落叶飘下了庭阶**：魂的到来被说轻如落叶——不敢惊动，只求“冷不防给我个惊喜”\n- **迟疑—徘徊—犹夷**：三段叠句“来”的措辞递变；犹夷同“犹豫”\n\n### 赏析\n\n饶孟侃（1902–1967），新月社诗人。此诗三段叠唱“来”，每段一个动作：等（灯下）、备（泡茶）、许（轻轻进来）——招魂的仪式被写成深夜待客，而待客的每个细节都泄露来者非人：鸡鸣为限、渔火明灭、壶上白鹤、落叶无声。全诗无一个悲字，把悼亡写得像一场蓄意的惊喜，以轻写重的节制工夫是新月派的看家本领。\n\n---\n\n选诗：现代语料（来自[Github](https://github.com/sheepzh/poetry)） · 注释赏析：Claude（预生成）\n\n"
+  },
+  "en": {
+    "file": "en.md",
+    "log": "英文 12-07–12-12 → [Emily Dickinson · 1830–1886] \"At least to pray is left, is left\"",
+    "md": "---\ntitle: 朝华章 · English\ndate: 2026-12-07 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: en\n---\n\n## \"At least to pray is left, is left\"\n\nEmily Dickinson · 1830–1886\n\n> At least to pray is left, is left.  \n> O Jesus! in the air  \n> I know not which thy chamber is, --  \n> I 'm knocking everywhere.\n>\n> Thou stirrest earthquake in the South,  \n> And maelstrom in the sea;  \n> Say, Jesus Christ of Nazareth,  \n> Hast thou no arm for me?\n\n### 注释\n\n- **is left, is left**：叠句式重复——近乎口语的急促顿挫，“还剩什么”的口气\n- **chamber**：/ˈtʃeɪmbə(r)/ · n. 房间、内室——天国的住处以家宅意象言之\n- **I’m knocking everywhere**：不知门在哪，只好逢门便敲——祷告被写成执拗的敲击\n- **stirrest**：v. 第二人称单数 · 掀起（stir 的古体 -est 变位）\n- **maelstrom**：/ˈmeɪlstrɒm/ · n. 大漩涡（源出挪威海域 Moskstraumen 的大涡传说）\n- **Hast thou no arm for me?**：hast＝have 的古体第二人称；神能掀地震的臂膀（arm），却无一臂递给敲门的人\n\n### 中文译文\n\n至少祈祷还在，还在。  哦耶稣！在空中  我不知你的房间是哪一间——  只好到处敲。\n\n你在南方掀起地震，  在海里搅起大漩涡；  说吧，拿撒勒的耶稣基督，  你就没有一条手臂留给我吗？\n\n### 简析\n\n狄金森把祷告写成“到处敲门”：天国像一座房间方位不明的宅子，敲门的人逢门便敲。第二节举出神力的两大展品——南方的地震、海上的大漩涡——随即一问把宏观与个人对峙：能掀地震的手臂，何无一臂伸向敲门者。敬畏有之，安慰无之，是她惯常的神学姿态。圣诗体 8/6 音节的四行节，被破折号与叠句顶得微微变形。\n\n\n---\n\n选诗：英文语料（来自[PoetryDB](https://poetrydb.org)） · 注释翻译：Claude（预生成） · 本期 12-07–12-12\n\n"
+  },
+  "de": {
+    "file": "de.md",
+    "log": "德文 12-07–12-12 → [Mörike · 1804–1875 · 1829] „Er ist's“",
+    "md": "---\ntitle: 朝华章 · Deutsch\ndate: 2026-12-07 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: de\n---\n\n## „Er ist's“\n\nMörike · 1804–1875 · 1829\n\n> Frühling läßt sein blaues Band  \n> wieder flattern durch die Lüfte;  \n> süße, wohlbekannte Düfte  \n> streifen ahnungsvoll das Land.\n>\n> Veilchen träumen schon,  \n> wollen balde kommen.  \n> – Horch, von fern ein leiser Harfenton!\n>\n> Frühling, ja du bist's!  \n> Dich hab ich vernommen!\n\n### 注释\n\n- **läßt … flattern**：让……飘动（lassen＋不定式；flattern 飘扬、拂动）\n- **das blaue Band**：蓝色的带子——春天的拟人信物；蓝是春空的色彩\n- **der Duft, ¨-e**：m. · 香气；süße, wohlbekannte Düfte＝甜美而熟悉的旧年香气\n- **streifen**：v. · 轻轻掠过、拂过\n- **ahnungsvoll**：adj. · 充满预感的（die Ahnung 预感＋-voll）——香气先于春天到达，如预感\n- **das Veilchen, -**：n. · 紫罗兰\n- **horch**：int. · 听！（唤起注意的感叹词，带古意）\n- **der Harfenton**：m. · 竖琴之声（die Harfe 竖琴＋der Ton 音）\n- **du bist’s**：＝du bist es 的口语缩合：正是你\n- **vernommen**：v. 过去分词 · 听见、听出（vernehmen，文语）\n\n### 中文译文\n\n春天把它蓝色的带子  又在空中飘扬；  甜美而熟悉的香气  满怀预感地掠过大地。\n\n紫罗兰已经做梦，  很快就要来了。  ——听，远处传来轻轻的竖琴声！\n\n春天，是的，正是你！  我听出来了！\n\n### 简析\n\n默里克（Eduard Mörike, 1804–1875）最著名的小诗（1829），德语春天诗的代名词。通篇是一场听觉的辨认：蓝带飘起、香气掠过只是预感，紫罗兰还在梦里，直到远方一声竖琴——“du bist’s!”——确认为止。三段由远及近、由物及声，末行以倒装惊叹收束（Dich hab ich vernommen!）。民歌体交叉韵 abab，一气呵成；沃尔夫（Hugo Wolf）为之谱的艺术歌曲同负盛名。\n\n\n---\n\n选诗：德语语料（Gutenberg project） · 注释翻译：Claude（预生成） · 本期 12-07–12-12\n\n"
+  }
+}

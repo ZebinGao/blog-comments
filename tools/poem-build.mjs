@@ -30,6 +30,10 @@ import { fileURLToPath } from 'node:url';
 
 const ZHIPU_API = 'https://open.bigmodel.cn/api/paas/v4/chat/completions';
 const POEMS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'poems');
+/* 2026-11-04 应用户要求默认开思考出注释（试质量对比）；思考全烧在 reasoning 上，
+ * 单次更慢，超时相应放宽到 5 分钟。要回快车道：ZHIPU_THINKING=off。 */
+const THINKING = process.env.ZHIPU_THINKING !== 'off';
+const API_TIMEOUT = THINKING ? 300000 : 120000;
 
 /* 英德六天一更的分组：按月内日期 1–6、7–12、13–18、19–24、25–月底，组内同一首。
  * 返回组首日（做选诗哈希的"选诗日期"）与展示标签。 */
@@ -164,7 +168,8 @@ async function annotate(kind, selDate, meta, title, poemText) {
         console.warn(`  [${kind}] 未设置 ZHIPU_API_KEY，跳过注释翻译，页面只出诗本身`);
         return null;
     }
-    const model = `智谱 ${process.env.ZHIPU_MODEL || 'glm-5.3'}`;
+    const apiModel = process.env.ZHIPU_MODEL || 'glm-5.3';
+    const model = `智谱 ${apiModel}`; // 页脚署名；请求体须用 apiModel，混进"智谱"前缀会被 400 秒拒
     const ask = ASKS[kind](meta, title, poemText);
     // 3 次尝试：关思考后偶发 JSON 不守契约（缺 translation 之类），两次连撞的概率不低
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -173,18 +178,16 @@ async function annotate(kind, selDate, meta, title, poemText) {
                 method: 'POST',
                 headers: { Authorization: `Bearer ${key}` },
                 body: JSON.stringify({
-                    model,
+                    model: apiModel,
                     messages: [
                         { role: 'system', content: SYSTEMS[kind] },
                         { role: 'user', content: ask },
                     ],
                     temperature: 0.3,
-                    // glm-5.3 默认思考，注释类结构化任务不需要：实测 16 token 都要
-                    // 20s 且全烧在 reasoning 上，出长 JSON 必超时；关掉降到秒级
-                    thinking: { type: 'disabled' },
+                    thinking: { type: THINKING ? 'enabled' : 'disabled' },
                     response_format: { type: 'json_object' },
                 }),
-            });
+            }, API_TIMEOUT);
             let content = resp.choices?.[0]?.message?.content || '';
             content = content.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, ''); // 防模型不听话裹代码块
             const out = JSON.parse(content);
