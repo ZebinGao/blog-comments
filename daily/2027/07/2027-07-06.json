@@ -1,0 +1,24 @@
+{
+  "date": "2027-07-06",
+  "generatedAt": "2026-11-05T04:23:38.765Z",
+  "zh": {
+    "file": "index.md",
+    "log": "中文(古典) 2027-07-06 → [唐 · 孟浩然 · 律诗]《与张折冲游耆阇寺》",
+    "md": "---\ntitle: 朝华章\ndate: 2027-07-06 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-classical\n---\n\n## 《与张折冲游耆阇寺》\n\n唐 · 孟浩然 · 律诗\n\n> 释子弥天秀，将军武库才。  \n> 横行塞北尽，独步汉南来。  \n> 贝叶传金口，山楼(一作樱)作赋开。  \n> 因君振嘉藻，江楚气雄哉。\n\n### 注释\n\n- **折冲**：唐府兵制军官折冲都尉（统领府兵），张折冲其名未详；折冲本义「使敌人冲锐折挫」\n- **耆阇寺**：qí dū：耆阇崛（灵鹫山）梵音之略，寺名取自佛典；寺当在襄阳一带\n- **释子弥天秀**：释子＝僧人；「弥天」用东晋高僧道安「弥天释道安」之语，赞寺僧之秀异\n- **武库才**：《晋书·杜预传》：预博学多通，朝野号曰「杜武库」；赞将军胸中如武库森然\n- **贝叶金口**：贝多罗树叶所写佛经；金口＝佛口宣说；贝叶传金口——法席讲经\n- **山楼作赋开**：寺楼开筵、登楼作赋；语料「(一作樱)」系异文注混入正文（「山楼」一作「樱」）\n- **嘉藻**：美好的辞藻、诗篇；因君振嘉藻——因张君的诗篇而意气振起\n\n### 白话翻译\n\n释子有弥天道安般的秀异，将军有杜武库般的雄才。  横行塞北无敌手，独步汉南而来。  贝叶经文从金口宣流，山楼上开筵作赋。  因您振起美好的诗藻——江楚的气象，何其雄哉！\n\n### 简析\n\n孟浩然与张姓折冲都尉同游耆阇寺之作（寺当在襄阳，浩然里中）。起联两个人物典故对举最见工：「弥天」用释道安语赞寺僧，「武库」用杜预事赞将军——一僧一将同席，佛才武才各得其所。颔联承将军：塞北横行、汉南独步，把武人履历嵌进游踪。颈联落到寺游：贝叶传金口（法席）、山楼作赋开（诗筵），释典与文事平分秋色。尾联点题收束，「江楚气雄哉」结得响亮，襄阳江山之气与人物之雄一并托出。语料「(一作樱)」为异文注混入正文，译文按「山楼」读。\n\n\n---\n\n选诗：古典语料（来自[搜韵](https://cnkgraph.com)） · 注释翻译：Claude（预生成）\n\n"
+  },
+  "zhModern": {
+    "file": "modern.md",
+    "log": "中文(现代) 2027-07-06 → [郭沫若 · 1892–1978]《晨兴》",
+    "md": "---\ntitle: 朝华章 · 现代\ndate: 2027-07-06 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-modern\n---\n\n## 《晨兴》\n\n郭沫若 · 1892–1978 年\n\n> 月光一样的朝暾  \n> 照透了这蓊郁着的森林，  \n> 银白色的沙中交横着迷离疏影。\n>\n> 松林外海水清澄，  \n> 远远的海中岛影昏昏，  \n> 好像是，还在恋着他昨宵的梦境。\n>\n> 携着个稚子徐行，  \n> 耳琴中交响着鸡声、鸟声，  \n> 我的心琴也微微地起了共鸣。\n\n### 注释\n\n- **朝暾**：zhāo tūn：初升的太阳\n- **蓊郁**：wěng yù：草木茂盛\n- **耳琴**：耳朵如琴——自铸词，把听觉写成一件会发声的乐器\n- **共鸣**：声学词移作心词：鸡声鸟声在耳琴上响，心琴也随之微微震动\n\n### 赏析\n\n收入1921年诗集《女神》，写于郭沫若留学日本时期——松林外即海、岛影昏昏，与《女神》中博多湾畔诸篇同一背景。三节九行各有章法：每节先铺视觉（月光般的朝暾、银白沙滩上迷离的疏影、清澄的海、昏昏的岛影），末节收到听觉（鸡声、鸟声），再以「耳琴」「心琴」两个自铸词把外籁与心弦接通，物我同响。最妙在开篇第一个比喻：把朝暾比作月光，晨光清凉如水，热景冷写，一开篇便脱去颂晨诗易落的热腔；「好像是，还在恋着他昨宵的梦境」以逗号断出一个迟疑的口吻，连远处的岛影都有了心事。\n\n---\n\n选诗：现代语料（来自[Github](https://github.com/sheepzh/poetry)） · 注释赏析：Claude（预生成）\n\n"
+  },
+  "en": {
+    "file": "en.md",
+    "log": "英文 07-01–07-06 → [Robert Herrick · 1591–1674] \"To Enjoy the Time\"",
+    "md": "---\ntitle: 朝华章 · English\ndate: 2027-07-01 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: en\n---\n\n## \"To Enjoy the Time\"\n\nRobert Herrick · 1591–1674\n\n> While fates permit us, let's be merry;  \n> Pass all we must the fatal ferry;  \n> And this our life, too, whirls away,  \n> With the rotation of the day.\n\n### 注释\n\n- **fates**：/feɪts/ · n. 命运（the Fates 为纺人生命线的三女神）；while fates permit us＝趁命运还容许\n- **merry**：/ˈmeri/ · adj. 尽情欢乐；carpe diem（及时行乐）诗的招牌词\n- **Pass all we must**：倒装＝we all must pass：人人都终须经过\n- **fatal ferry**：/ˈferi/ · n. 渡口／渡船；冥河渡口——亡魂皆须渡过（暗用卡戎 Charon 摆渡意象）\n- **whirls away**：/wɜːlz/ · v. 飞旋而去；生命像被旋转甩出去的东西\n- **rotation**：/rəʊˈteɪʃn/ · n. 旋转、自转（天文术语：昼夜来自地球自转）；以天体尺度量光阴\n\n### 中文译文\n\n趁命运还容许，让我们尽情欢乐；  人人终须渡过那命定的冥河渡口；  而这生命，也随着昼夜的旋转，  一圈一圈，飞旋着远去。\n\n### 简析\n\n赫里克（1591—1674）是英国内战前夕「骑士派」诗人，此诗出自其唯一诗集《Hesperides》（1648），与《致少女：莫惜时光》同一血脉的 carpe diem 小诗。四行两对韵（merry／ferry、away／day），八音节诗行短促如鼓点。妙处在把「及时行乐」放进两个旋转的意象里：冥河的「渡过」（pass）与地球的「自转」（rotation）——生命是被昼夜的旋转一寸寸甩出去的，欢乐因此不是放纵，而是对宇宙尺度的一次清醒回应。\n\n\n---\n\n选诗：英文语料（来自[PoetryDB](https://poetrydb.org)） · 注释翻译：Claude（预生成） · 本期 07-01–07-06\n\n"
+  },
+  "de": {
+    "file": "de.md",
+    "log": "德文 07-01–07-06 → [Heine · 1797–1856 · 1830] „Leise zieht durch mein Gemüt“",
+    "md": "---\ntitle: 朝华章 · Deutsch\ndate: 2027-07-01 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: de\n---\n\n## „Leise zieht durch mein Gemüt“\n\nHeine · 1797–1856 · 1830\n\n> Leise zieht durch mein Gemüt  \n> liebliches Geläute.  \n> Klinge, kleines Frühlingslied,  \n> kling hinaus ins Weite.\n>\n> Kling hinaus bis an das Haus,  \n> wo die Blumen sprießen;  \n> wenn du eine Rose schaust,  \n> sag, ich laß sie grüßen.\n\n### 注释\n\n- **zieht**：ziehen 的第三人称单数：拉、曳；此处「轻轻飘过」\n- **Gemüt**：das Gemüt, -en：心灵、情怀（德语特有之词，兼指心情与性情）\n- **Geläute**：das Geläute, -：钟声（集合名词）；liebliches＝悦耳的\n- **Klinge**：klingen 的命令式：响吧；kleines Frühlingslied＝小小的春之歌\n- **ins Weite**：das Weite（辽远之处）；kling hinaus ins Weite＝一直响到辽阔处\n- **sprießen**：v. 萌发、抽芽；wo die Blumen sprießen＝那花开草长的人家\n- **schaust**：schauen 的第二人称单数：看见（你若看见一朵玫瑰）\n- **laß sie grüßen**：lassen＋动词原形：让她们代我致意；die Rose, -n＝玫瑰\n\n### 中文译文\n\n一片悦耳的钟声  轻柔地飘过我的心灵。  响吧，小小的春之歌，  响出去，向那辽阔之处。\n\n一直响到那座房子，  那里花正抽芽开放；  你若看见一朵玫瑰，  就说，我让她代我问候。\n\n### 简析\n\n海涅抒情短章（语料系年1830），两节八行，通体交叉韵（Gemüt–Lied、Geläute–Weite；Haus–schaust、sprießen–grüßen）。写法是把春之歌当信鸽放出去：从心里一路响到远方花开的人家，末句「我让玫瑰代我问候」——人不出场，情意全托钟声与花递送，是最轻的抒情、最远的射程。全诗多用 l 与 ei 的柔音（Leise、liebliches、Geläute），音色本身就是内容；后世多有谱曲，是德语艺术歌曲偏爱的短章。\n\n\n---\n\n选诗：德语语料（Gutenberg project） · 注释翻译：Claude（预生成） · 本期 07-01–07-06\n\n"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "date": "2027-07-02",
+  "generatedAt": "2026-11-05T04:23:38.738Z",
+  "zh": {
+    "file": "index.md",
+    "log": "中文(古典) 2027-07-02 → [元 · 张养浩 · 律诗]《秋日梨花》",
+    "md": "---\ntitle: 朝华章\ndate: 2027-07-02 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-classical\n---\n\n## 《秋日梨花》\n\n元 · 张养浩 · 律诗\n\n> 雪香吹尽树头春，谁遣西风为返魂。  \n> 月影已非前日梦，雨容独带旧时痕。  \n> 只知秋色千林老，争信阳和一脉存。  \n> 莫讶殷韩太多事，仙家元不计寒暄。\n\n### 注释\n\n- **树头春**：枝头的春色；雪香吹尽——如雪的花、如缕的香都被吹尽，点明秋日开花之非其时\n- **返魂**：返魂香传说：《海内十洲记》载西域灵香能返魂续命；谁遣西风为返魂——谁差西风来当返魂香，唤回梨花\n- **雨容独带旧时痕**：带雨的花容还带着旧时痕迹——二度之花如春花还魂，旧梦泪痕相续\n- **阳和**：春日和暖之气；争信＝怎信。千林俱老之中，谁信春暖气犹存一线\n- **殷韩**：殷七七与韩湘子：唐人传说中能「开顷刻花」的仙家——殷七七重九日开鹤林寺杜鹃，韩湘顷刻开花于盆土\n- **寒暄**：本义冬夏寒暖，代指时节更替；仙家元不计寒暄——仙人本不理会四季的规矩\n\n### 白话翻译\n\n雪白的花香把枝头的春天吹尽了，是谁遣西风来为它返魂？  月下花影已不是前日的旧梦，带雨的容颜还带着旧时的痕迹。  只道秋色里千林都已老去，怎信阳和还存着一脉生机？  别惊讶殷七七、韩湘子们太多事——仙家本来就不管寒来暑往。\n\n### 简析\n\n咏秋日梨花二度开的七律（梨树于秋中复花，古人视为异候）。首联设问起势：春花吹尽，谁遣西风作返魂香？颔联承以「月影非梦、雨容带痕」，把二度花写成春花之魂，旧梦泪痕相续，最见体物之细。颈联一转：人人只见千林秋老，谁信阳和一脉犹存——秋花成了春意的孤证。尾联搬出殷七七、韩湘子「开顷刻花」的仙家故事自解：仙家不计寒暄，二度开花不是妖异，是天地的游戏笔墨。张养浩归隐云庄时期多咏物之什（作年难确考），此诗体物入微而收束诙谐，与云庄散曲的谐趣一脉相承。\n\n\n---\n\n选诗：古典语料（来自[搜韵](https://cnkgraph.com)） · 注释翻译：Claude（预生成）\n\n"
+  },
+  "zhModern": {
+    "file": "modern.md",
+    "log": "中文(现代) 2027-07-02 → [卞之琳 · 1910–2000]《墙头草》",
+    "md": "---\ntitle: 朝华章 · 现代\ndate: 2027-07-02 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: zh-modern\n---\n\n## 《墙头草》\n\n卞之琳 · 1910–2000 年\n\n> 五点钟贴一角夕阳  \n> 六点钟挂半轮灯光  \n> 想有人把所有的日子  \n> 就过在做做梦，看看墙  \n> 墙头草长了又黄了\n\n### 注释\n\n- **贴一角夕阳**：五点钟的动作：时间像招贴一样「贴」上墙；「一角」的量词妙用——夕阳成了裁下的纸角\n- **挂半轮灯光**：六点钟：初亮的街灯（或半轮月）；从「贴」到「挂」，一天两格，如墙上的两张挂历\n- **做做梦，看看墙**：所「想」的一生：梦与墙——精神与实物的两个极小单位\n- **墙头草**：俗语中随风倒的「墙头草」回到字面：真的草，长了又黄；草的一岁一枯荣，量出墙内人的一生\n\n### 赏析\n\n五行小诗（1930年代前期所作），结构像一次钟点的速写：五点钟贴一角夕阳，六点钟挂半轮灯光——一天被裁成两张贴在墙上的画；随后镜头一沉：「想有人把所有的日子／就过在做做梦，看看墙」，把一生压进一面墙的视界里。结句「墙头草长了又黄了」最冷：俗语里那株没有立场的墙头草，在这里只是时间的刻度，用枯荣记年。卞之琳惯用的非个人化在此做到极简——不抒情，只并置（时间、墙、草），怅惘全在行与行的空隙里。\n\n---\n\n选诗：现代语料（来自[Github](https://github.com/sheepzh/poetry)） · 注释赏析：Claude（预生成）\n\n"
+  },
+  "en": {
+    "file": "en.md",
+    "log": "英文 07-01–07-06 → [Robert Herrick · 1591–1674] \"To Enjoy the Time\"",
+    "md": "---\ntitle: 朝华章 · English\ndate: 2027-07-01 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: en\n---\n\n## \"To Enjoy the Time\"\n\nRobert Herrick · 1591–1674\n\n> While fates permit us, let's be merry;  \n> Pass all we must the fatal ferry;  \n> And this our life, too, whirls away,  \n> With the rotation of the day.\n\n### 注释\n\n- **fates**：/feɪts/ · n. 命运（the Fates 为纺人生命线的三女神）；while fates permit us＝趁命运还容许\n- **merry**：/ˈmeri/ · adj. 尽情欢乐；carpe diem（及时行乐）诗的招牌词\n- **Pass all we must**：倒装＝we all must pass：人人都终须经过\n- **fatal ferry**：/ˈferi/ · n. 渡口／渡船；冥河渡口——亡魂皆须渡过（暗用卡戎 Charon 摆渡意象）\n- **whirls away**：/wɜːlz/ · v. 飞旋而去；生命像被旋转甩出去的东西\n- **rotation**：/rəʊˈteɪʃn/ · n. 旋转、自转（天文术语：昼夜来自地球自转）；以天体尺度量光阴\n\n### 中文译文\n\n趁命运还容许，让我们尽情欢乐；  人人终须渡过那命定的冥河渡口；  而这生命，也随着昼夜的旋转，  一圈一圈，飞旋着远去。\n\n### 简析\n\n赫里克（1591—1674）是英国内战前夕「骑士派」诗人，此诗出自其唯一诗集《Hesperides》（1648），与《致少女：莫惜时光》同一血脉的 carpe diem 小诗。四行两对韵（merry／ferry、away／day），八音节诗行短促如鼓点。妙处在把「及时行乐」放进两个旋转的意象里：冥河的「渡过」（pass）与地球的「自转」（rotation）——生命是被昼夜的旋转一寸寸甩出去的，欢乐因此不是放纵，而是对宇宙尺度的一次清醒回应。\n\n\n---\n\n选诗：英文语料（来自[PoetryDB](https://poetrydb.org)） · 注释翻译：Claude（预生成） · 本期 07-01–07-06\n\n"
+  },
+  "de": {
+    "file": "de.md",
+    "log": "德文 07-01–07-06 → [Heine · 1797–1856 · 1830] „Leise zieht durch mein Gemüt“",
+    "md": "---\ntitle: 朝华章 · Deutsch\ndate: 2027-07-01 06:00:00\ntype: \"page\"\nlayout: poem-daily\nlang: de\n---\n\n## „Leise zieht durch mein Gemüt“\n\nHeine · 1797–1856 · 1830\n\n> Leise zieht durch mein Gemüt  \n> liebliches Geläute.  \n> Klinge, kleines Frühlingslied,  \n> kling hinaus ins Weite.\n>\n> Kling hinaus bis an das Haus,  \n> wo die Blumen sprießen;  \n> wenn du eine Rose schaust,  \n> sag, ich laß sie grüßen.\n\n### 注释\n\n- **zieht**：ziehen 的第三人称单数：拉、曳；此处「轻轻飘过」\n- **Gemüt**：das Gemüt, -en：心灵、情怀（德语特有之词，兼指心情与性情）\n- **Geläute**：das Geläute, -：钟声（集合名词）；liebliches＝悦耳的\n- **Klinge**：klingen 的命令式：响吧；kleines Frühlingslied＝小小的春之歌\n- **ins Weite**：das Weite（辽远之处）；kling hinaus ins Weite＝一直响到辽阔处\n- **sprießen**：v. 萌发、抽芽；wo die Blumen sprießen＝那花开草长的人家\n- **schaust**：schauen 的第二人称单数：看见（你若看见一朵玫瑰）\n- **laß sie grüßen**：lassen＋动词原形：让她们代我致意；die Rose, -n＝玫瑰\n\n### 中文译文\n\n一片悦耳的钟声  轻柔地飘过我的心灵。  响吧，小小的春之歌，  响出去，向那辽阔之处。\n\n一直响到那座房子，  那里花正抽芽开放；  你若看见一朵玫瑰，  就说，我让她代我问候。\n\n### 简析\n\n海涅抒情短章（语料系年1830），两节八行，通体交叉韵（Gemüt–Lied、Geläute–Weite；Haus–schaust、sprießen–grüßen）。写法是把春之歌当信鸽放出去：从心里一路响到远方花开的人家，末句「我让玫瑰代我问候」——人不出场，情意全托钟声与花递送，是最轻的抒情、最远的射程。全诗多用 l 与 ei 的柔音（Leise、liebliches、Geläute），音色本身就是内容；后世多有谱曲，是德语艺术歌曲偏爱的短章。\n\n\n---\n\n选诗：德语语料（Gutenberg project） · 注释翻译：Claude（预生成） · 本期 07-01–07-06\n\n"
+  }
+}
